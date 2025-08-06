@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grace's Personal Website</title>
+
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #c6d6ff, #fceff9, #d3f8e2);
+      color: black;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(8px);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      border: 2px solid black;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+      display: none;
+      padding: 80px 30px;
+      text-align: center;
+      min-height: 80vh;
+    }
+
+    .active {
+      display: block;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 20px;
+      max-width: 900px;
+      margin: 0 auto 30px;
+      line-height: 2;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      width: 300px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      overflow: hidden;
+      text-align: center;
+      color: black;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+      font-size: 24px;
+    }
+
+    .card p {
+      padding: 0 15px 20px;
+      font-size: 18px;
+    }
+
+    .back-btn {
+      margin-top: 40px;
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: white;
+      color: black;
+      text-decoration: none;
+      border: 2px solid black;
+      border-radius: 25px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('about')">About</a>
+    <a href="#" onclick="showSection('hobbies')">Hobbies</a>
+    <a href="#" onclick="showSection('achievements')">Achievements</a>
+    <a href="#" onclick="showSection('school')">School</a>
+    <a href="#" onclick="showSection('contact')">Contact</a>
+  </nav>
+
+  <!-- Sections Start -->
+  <div id="home" class="section active">
+    <h1>Welcome to Grace's Website</h1>
+    <p>Hello and welcome to my personal website! I’m Grace, a Criminology student who dreams of making a positive impact in the world by promoting peace and justice. This website is a place where I share my interests, the things I love doing, the schools I’ve studied at, my achievements, and how you can get in touch with me.</p>
+    <p>Each part of this site tells you something about my journey. Whether it's my hobbies like sports and cooking, my accomplishments in school, or just simple stories from my life — I hope you enjoy reading and learning about me. Thanks for visiting!</p>
+  </div>
+
+  <div id="about" class="section">
+    <h1>About Me</h1>
+    <p>Hi! My name is Grace. I’m 19 years old and currently studying Criminology at the University of the Cordilleras. Since I was young, I’ve always been curious about how laws work and how people can help keep their community safe. That’s why I chose this path — to one day serve and protect with kindness and strength.</p>
+    <p>I enjoy meeting people, learning new things, and facing challenges that make me grow. I try to stay positive, even during hard times. I believe that we become better every time we try our best and never give up. I also love spending time with family and friends, because they are my support system in life.</p>
+    <p>I’m simple, friendly, and always willing to learn. I know I still have a lot to experience, but I’m excited for what’s ahead!</p>
+    <a href="#" class="back-btn" onclick="showSection('home')">Back to Homepage</a>
+  </div>
+
+  <div id="hobbies" class="section">
+    <h1>My Hobbies</h1>
+    <p>Hobbies help me feel happy and relaxed, especially when life gets busy with school. They give me time to enjoy the things I love. Some of my favorite hobbies are playing softball, cooking meals, and listening to music or playing games online with friends.</p>
+    <p>Softball teaches me how to work with others, stay strong, and never give up. Cooking is fun because I get to try new recipes and make food that my family and friends enjoy. Music keeps me calm and focused, and gaming is a nice way to laugh and unwind after a long day.</p>
+    <div class="gallery">
+      <div class="card">
+        <img src="pic1.jpg" alt="Softball">
+        <h3>Softball</h3>
+        <p>Playing softball keeps me active and healthy. It also builds discipline and teamwork. I love the excitement of being on the field and doing my best every game.</p>
+      </div>
+      <div class="card">
+        <img src="pic2.jpg" alt="Cooking">
+        <h3>Cooking</h3>
+        <p>I enjoy preparing meals and trying new dishes. Cooking helps me feel creative and brings joy to the people who taste my food.</p>
+      </div>
+      <div class="card">
+        <img src="pic3.jpg" alt="Gaming and Music">
+        <h3>Gaming & Music</h3>
+        <p>When I play games or listen to music, I feel more relaxed and happy. It helps me balance the serious side of school with fun and laughter.</p>
+      </div>
+    </div>
+    <a href="#" class="back-btn" onclick="showSection('home')">Back to Homepage</a>
+  </div>
+
+  <div id="achievements" class="section">
+    <h1>My Achievements</h1>
+    <p>I feel proud of what I have achieved so far, even if there’s still a long way to go. In elementary, I became a classroom officer and SSG leader. I was awarded Athlete of the Year in Grade 6 and even got to compete in Palarong Pambansa, which was an amazing experience.</p>
+    <p>In high school, I received honors for doing well in my studies. I also joined a cooking contest in our town and won! It made me more confident in myself. Now in college, I’m part of our department’s sports team and still aiming to keep my grades high while doing what I love.</p>
+    <p>Every award and achievement means a lot to me, because it shows that hard work really pays off.</p>
+    <a href="#" class="back-btn" onclick="showSection('home')">Back to Homepage</a>
+  </div>
+
+  <div id="school" class="section">
+    <h1>My Schools</h1>
+    <p>My education started at Tetep-an Elementary School in Sagada. I learned the basics and made good memories with my classmates and teachers. For junior high school, I went to Antadao National High School, where I gained more confidence and got better at handling responsibilities.</p>
+    <p>In senior high, I transferred to Sagada National High School and took the HUMSS strand. It helped me become more interested in people and how society works. Now, I’m studying Criminology at the University of the Cordilleras. I feel thankful for each school that helped me grow, learn, and believe in my dreams.</p>
+    <a href="#" class="back-btn" onclick="showSection('home')">Back to Homepage</a>
+  </div>
+
+  <div id="contact" class="section">
+    <h1>Contact Me</h1>
+    <p>Thank you for taking time to visit my website! If you'd like to connect or say hello, you can reach out to me using the details below. I'm always happy to meet new friends, share ideas, or simply talk.</p>
+    <p><strong>Email:</strong> olowan@gmail.com</p>
+    <p><strong>Facebook:</strong> Grace Olowan</p>
+    <a href="#" class="back-btn" onclick="showSection('home')">Back to Homepage</a>
+  </div>
+  <!-- Sections End -->
+
+  <footer>
+    &copy; 2025 Grace's Personal Website. All rights reserved.
+  </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
